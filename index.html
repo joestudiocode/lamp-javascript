@@ -17,10 +17,15 @@
     <style></style>
   </head>
   <body>
-    <div class="flex justify-center items-center min-h-screen w-full bg-gray-800 gap-4">
+    <!-- min-h-screen  -->
+      <div class="flex justify-center items-center">
+        <h1>Ruang Keluarga</h1>
+      </div>
+    <div class="flex justify-center items-center w-full bg-gray-800 gap-4 p-5">
+      
       <!-- lampu 1 -->
       <div class="flex flex-col gap-2 items-center">
-        <img src="../lampu/assets/image/off.png" alt="Lampu OFF" id="lamp1" />
+        <img src="./assets/image/off.png" alt="Lampu OFF" id="lamp1" />
 
         <label for="default-toggle1"class="inline-flex relative items-center cursor-pointer">
           <input type="checkbox"value="" id="default-toggle1"class="sr-only peer" onchange="saklar()"/>
@@ -29,7 +34,7 @@
       </div>
       <!-- lampu 2 -->
       <div class="flex flex-col gap-2 items-center">
-        <img src="../lampu/assets/image/off.png" alt="Lampu OFF" id="lamp2" />
+        <img src="./assets/image/off.png" alt="Lampu OFF" id="lamp2" />
         <label
           for="default-toggle2"
           class="inline-flex relative items-center cursor-pointer">
@@ -38,15 +43,91 @@
       </div>
       <!-- lampu 3 -->
       <div class="flex flex-col gap-2 items-center">
-        <img src="../lampu/assets/image/off.png" alt="Lampu OFF" id="lamp3" />
+        <img src="./assets/image/off.png" alt="Lampu OFF" id="lamp3" />
         <label for="default-toggle3" class="inline-flex relative items-center cursor-pointer">
           <input type="checkbox" value="" id="default-toggle3" class="sr-only peer" onchange="saklar()"/>
           <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
         </label>
       </div>
     </div>
+    <div class="flex justify-center items-center">
+        <h1>Ruang Makan</h1>
+      </div>
+    <div class="flex justify-center items-center w-full bg-gray-800 p-5">
+        <div class="flex flex-col gap-2 items-center">
+          <img src="./assets/image/off.png" alt="Lampu OFF" id="lamprm" />
+          <label for="default-lamprm1" class="inline-flex relative items-center cursor-pointer">
+          <input type="checkbox" value="" id="default-lamprm1" class="sr-only peer" onchange="rmakan()"/>
+            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+            </div>
+          </label>
+      </div>
+    </div>
+    
+    <div class="flex justify-center items-center">
+        <h1>Ruang Tidur</h1>
+      </div>
+    <div class="flex justify-center items-center w-full bg-gray-800 gap-4 p-5">
+      <!-- lampu 1 -->
+      <div class="flex flex-col gap-2 items-center">
+        <img src="./assets/image/off.png" alt="Lampu OFF" id="lamprt1" />
 
-    <script src="../lampu/saklar.js"></script>
+        <label for="default-togglert1"class="inline-flex relative items-center cursor-pointer">
+          <input type="checkbox"value="" id="default-togglert1"class="sr-only peer" onchange="rtidur()"/>
+          <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+        </label>
+      </div>
+      <!-- lampu 2 -->
+      <div class="flex flex-col gap-2 items-center">
+        <img src="./assets/image/off.png" alt="Lampu OFF" id="lamprt2" />
+        <label
+          for="default-togglert2"
+          class="inline-flex relative items-center cursor-pointer">
+          <input type="checkbox" value="" id="default-togglert2" class="sr-only peer" onchange="rtidur()"/>
+          <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+      </div>
+    </div>
+    <div class="flex justify-center items-center">
+        <h1>Ruang Tamu</h1>
+      </div>
+    <div class="flex justify-center items-center w-full bg-gray-800 gap-4 p-5">
+      <!-- lampu 1 -->
+      <div class="flex flex-col gap-2 items-center">
+        <img src="./assets/image/off.png" alt="Lampu OFF" id="lamprtamu1" />
+
+        <label for="default-togglertamu1"class="inline-flex relative items-center cursor-pointer">
+          <input type="checkbox"value="" id="default-togglertamu1"class="sr-only peer" onchange="rtamu()"/>
+          <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+        </label>
+      </div>
+      <!-- lampu 2 -->
+      <div class="flex flex-col gap-2 items-center">
+        <img src="./assets/image/off.png" alt="Lampu OFF" id="lamprtamu2" />
+
+        <label for="default-togglertamu2"class="inline-flex relative items-center cursor-pointer">
+          <input type="checkbox"value="" id="default-togglertamu2"class="sr-only peer" onchange="rtamu()"/>
+          <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+        </label>
+      </div>
+      <!-- lampu 3 -->
+      <div class="flex flex-col gap-2 items-center">
+        <img src="./assets/image/off.png" alt="Lampu OFF" id="lamprtamu3" />
+
+        <label for="default-togglertamu3"class="inline-flex relative items-center cursor-pointer">
+          <input type="checkbox"value="" id="default-togglertamu3"class="sr-only peer" onchange="rtamu()"/>
+          <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+        </label>
+      </div>
+      <!-- lampu 4 -->
+      <div class="flex flex-col gap-2 items-center">
+        <img src="./assets/image/off.png" alt="Lampu OFF" id="lamprtamu4" />
+
+        <label for="default-togglertamu4"class="inline-flex relative items-center cursor-pointer">
+          <input type="checkbox"value="" id="default-togglertamu4"class="sr-only peer" onchange="rtamu()"/>
+          <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+        </label>
+      </div>
+    <script src="saklar.js"></script>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
   </body>
 </html>
